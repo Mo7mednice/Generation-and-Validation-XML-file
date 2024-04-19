@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Validator</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <form method="post" class="form-1" enctype="multipart/form-data" action="/upload_dtd">
+            <h1>Validate XML file with DTD</h1>
+            <label for="xmlFileInput1">Choose XML File:</label>
+            <input type="file" name="xmlFile1" id="xmlFileInput1" accept=".xml" required><br>
+            <button type="submit" id="validateDTD">Validate</button>
+        </form>
+        <form method="post" class="form-2" enctype="multipart/form-data" action="/upload_xsd">
+            <h1>Validate XML file with XSD</h1>
+            <label for="xmlFileInput2">Choose XML File:</label>
+            <input type="file" name="xmlFile2" id="xmlFileInput2" accept=".xml" required><br>
+            <button type="submit" id="validateXSD">Validate</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

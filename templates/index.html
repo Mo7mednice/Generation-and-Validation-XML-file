@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate XML Files</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Generate XML Files</h1>
+        <form id="xmlForm">
+            <div class="input-box">
+                <input type="text" id="fileName" name="fileName" required>
+                <label for="fileName">Filename</label>
+            </div>
+            <h2>Person Information</h2>
+            <div class="input-box">
+
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="firstName">Firstname</label>
+            </div>
+            <div class="input-box">
+
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="lastName">Lastname</label>
+            </div>
+            <div class="input-box">
+
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+
+                <input type="number" id="age" min="1" max="100" name="age" required>
+                <label for="age">Age</label>
+            </div>
+            <div class="input-box"> 
+                <p>Select Gender: </p>
+                <select class="form-select" name="gender" aria-label="Floating label select" required>
+                    <option selected disabled hidden>--------------------------------</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <input type="text" id="country" name="country" required>
+                <label for="country">Country</label>
+            </div>
+             
+            <button type="submit" class="botton">Submit</button>
+        </form>
+    </div>
+    <script src="../static/scripte.js"></script>
+</body>
+
+</html>
